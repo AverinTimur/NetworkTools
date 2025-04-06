@@ -98,6 +98,9 @@ namespace Network {
                 *buffer = read();
                 close();
             }, buffer_size){};
+        ~Client() {
+            this->Stop();
+        }
 
         int Start() {
             socket_fd = socket(AF_INET, SOCK_STREAM, 0);

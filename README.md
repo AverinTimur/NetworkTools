@@ -1,5 +1,5 @@
 # Server
-**Server(string address, int port, function_type manage_response, buffer_size)** 
+## Server(string address, int port, function_type manage_response, buffer_size)
 
 Constructor
 
@@ -9,11 +9,11 @@ function_type is:
 * std::function<std::string* (std::string)> if you want to close socket after first message
 * std::function<void (std::function<std::string ()> read, std::function<void (std::string*)> send, std::function<void ()> close)> if you want for full server behavior control 
 
-**Start**
+## Start 
 
 Start server
 
-**Stop**
+## Stop
 
 Stop server
 
@@ -28,11 +28,11 @@ function_type is:
 * string if you want to send one message
 * std::function<void (std::function<std::string ()> read, std::function<void (std::string*)> send, std::function<void ()> close)> if you want for full server behavior control
 
-**Start**
+## Start
 
 Send message
 
-**Stop**
+## Stop
 
 Stop client
   
